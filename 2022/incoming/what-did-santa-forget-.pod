@@ -82,11 +82,11 @@ value if the arguments are not equal, and the diff is put into C<$missing>.
 
 With this program, Santa got his answer:
 
-	looks like you forgot something: $VAR1 = {
-	          'presents' => [
-	                          'for Amy'
-	                        ]
-	        };
+    looks like you forgot something: $VAR1 = {
+              'presents' => [
+                              'for Amy'
+                            ]
+            };
 
 Right! There are two Amys on the list, and he only has a present for one. Of
 course he doesn't need last names, he simply distinguishes them by their
@@ -112,16 +112,16 @@ C<diff> function tries to find a Perl data structure which describes the patch
 for the second value to be equal to the first one. With arguments order
 reversed in the second call, Santa could see the full picture:
 
-	looks like you forgot something: $VAR1 = {
-	          'presents' => [
-	                          'for Amy'
-	                        ]
-	        };
-	looks like you have something extra: $VAR1 = {
-	          'other' => [
-	                       'sleigh repair tool'
-	                     ]
-	        };
+    looks like you forgot something: $VAR1 = {
+              'presents' => [
+                              'for Amy'
+                            ]
+            };
+    looks like you have something extra: $VAR1 = {
+              'other' => [
+                           'sleigh repair tool'
+                         ]
+            };
 
 Well of course he doesn't need that, he can use magic instead!
 
